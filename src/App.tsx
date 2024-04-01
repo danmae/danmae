@@ -1,14 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Header from "./components/header";
+import LandingZone from "./components/landingzone";
+import Footer from "./components/footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
-      </header>
+      <Header />
+      <LandingZone />
+      <Footer />
     </div>
   );
 }
