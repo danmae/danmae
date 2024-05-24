@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/header.css";
+import { Link } from "react-router-dom";
 
 class Header extends React.Component {
   render() {
@@ -7,11 +8,11 @@ class Header extends React.Component {
       <div className="header">
         <nav className="grid">
           <ul>
-            <li><a className="menu-logo" href="">DanMae</a></li>
-            <li><a className="menu-text" href="">home</a></li>
-            <li><a className="menu-text" href="">portfolio</a></li>
-            <li><a className="menu-text" href="">about</a></li>
-            <li><a className="menu-text" href="">contact</a></li>
+            <li><Link className="menu-logo" to="/">DanMae</Link></li>
+            <li><Link className="menu-text item-1" to="/">home</Link></li>
+            <li><Link className="menu-text item-2" to="/portfolio">portfolio</Link></li>
+            <li><Link className="menu-text item-3" to="/about">about</Link></li>
+            <li><Link className="menu-text item-4" to="/contact">contact</Link></li>
           </ul>
         </nav>
       </div>
@@ -20,23 +21,3 @@ class Header extends React.Component {
 }
 
 export default Header;
-
-
-{
-  /**
-   * <div>
-        <nav className="">
-          <div className="topnav">
-            <a className="" href="/index.html">DanMae</a>
-            <div className="topnav-right">
-              <a href="/index.html">home</a>
-              <a href="/portfolio.html">portfolio</a>
-              <a href="/about.html">about</a>
-              <a href="mailto:daniel@lostingravity.de">contact</a>
-            </div>
-          </div>
-        </nav>
-      </div>
-   * 
-   */
-}

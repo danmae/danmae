@@ -1,18 +1,43 @@
-ul{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  margin: 0 auto;
-  gap: 1rem;
-  list-style-type: none;
-  text-decoration: none;
-  font-family: "Work Sans xLight";
-  font-size: 25px;
-  text-align: center;
+ul {
+  display: none;
 }
-.menu-logo{
+.menu-logo {
   float: left;
   font-family: "Work Sans Regular";
 }
-@media (min-width: 900px) {
-  ul { grid-template-columns: 6fr 1fr 1fr 1fr 1fr; }
+/*Desktop*/
+@media (min-width: 800px) {
+  ul {
+    grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    margin: 0 auto;
+    gap: 1rem;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Work Sans xLight";
+    font-size: 25px;
+    text-align: center;
+  }
+  .header{
+    margin-top:20px;
+  }
+  li:hover{
+    transition-duration: 0.3s;
+    transform: scale(1.1) translate(3.5%);
+  }
+  .menu-logo:hover{
+    color:#ff7f1d;
+  }
+  .item-1:hover{
+    color: #ff7f1d;
+  }
+  .item-2:hover{
+    color: #ff4093;
+  }
+  .item-3:hover{
+    color: #ff7f1d;
+  }
+  .item-4:hover{
+    color: #ff4093;
+  }
 }
