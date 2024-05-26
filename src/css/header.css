@@ -21,8 +21,10 @@ ul {
   .header{
     margin-top:20px;
   }
-  li:hover{
+  li{
     transition-duration: 0.3s;
+  }
+  li:hover{
     transform: scale(1.1) translate(3.5%);
   }
   .menu-logo:hover{

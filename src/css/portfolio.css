@@ -1,0 +1,49 @@
+@import-normalize;
+button:hover {
+  transform: initial;
+}
+button {
+  background-color: initial;
+  border: initial;
+  padding-left: initial;
+  padding-right: initial;
+  padding-top: initial;
+  padding-bottom: initial;
+  margin-left: initial;
+  margin-right: initial;
+  font-size: initial;
+  font-family: "Work Sans Light";
+  box-shadow: initial;
+  color: initial;
+}
+.portfolio-grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+.grid-item{
+  max-width:100%;
+}
+.portfolio-text{
+  text-align: center;
+  color:#ff7f1d;
+  font-family: "Work Sans xLight";
+}
+img{
+  transition-duration: 0.4s;
+}
+img:hover{
+  transform: scale(1.1);
+}
+@media (min-width: 800px) {
+.portfolio-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  margin: 1rem;
+}
+.grid-item{
+  max-width:100%;
+}
+}
