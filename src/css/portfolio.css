@@ -16,35 +16,55 @@ button {
   box-shadow: initial;
   color: initial;
 }
-.portfolio-grid{
+.portfolio-grid {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   margin: 1rem;
 }
-.grid-item{
-  max-width:100%;
+.grid-item {
+  max-width: 100%;
 }
-.portfolio-text{
+.portfolio-text {
   text-align: center;
-  color:#ff7f1d;
+  color: #ff7f1d;
   font-family: "Work Sans xLight";
 }
-img{
+img {
   transition-duration: 0.4s;
-  border-radius:20px;
+  border-radius: 20px;
 }
-img:hover{
+img:hover {
   transform: scale(1.1);
 }
+.mobileNav{
+  width:100%;
+  margin:20px auto;
+  text-align:center;
+  margin-bottom:0px;
+  transition-duration: 0.4s;
+}
+.mobiletext{
+  padding-left:20px;
+  padding-right:20px;
+  font-size:25;
+  transition-duration: 0.4s;
+  width:30%;
+}
+.mobiletext:hover {
+  transform: scale(1.5); 
+}
 @media (min-width: 800px) {
-.portfolio-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-  margin: 1rem;
-}
-.grid-item{
-  max-width:100%;
-}
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 1rem;
+  }
+  .grid-item {
+    max-width: 100%;
+  }
+  .mobileNav {
+    display: none;
+  }
 }
