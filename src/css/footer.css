@@ -1,6 +1,7 @@
 .impressum{
   display: grid;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr 1fr;
+  width: 200px;
   margin: 0 auto;
   list-style-type: none;
   text-decoration: none;

@@ -1,1 +1,9 @@
 @import-normalize;
+.about-intro{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.services-section{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}

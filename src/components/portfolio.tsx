@@ -7,9 +7,9 @@ class Portfolio extends React.Component {
       <div>
         <h1 className="portfolio-text">Portfolio</h1>
         <nav className="mobileNav">
-                <a className="mobiletext" href="/">zurück</a>
-                <a className="mobiletext" href="/about">about</a>
-            </nav>
+          <a className="mobiletext" href="/">zurück</a>
+          <a className="mobiletext" href="/about">about</a>
+        </nav>
         <div className="portfolio-grid">
         <a href="https://kinder-jahre.com/" target="blank"><img className="grid-item" src={process.env.PUBLIC_URL + "/images/projects/kinderjahre.jpg"} alt="Kinderjahre"/></a>
         <a href="https://kenntnisreich-kindertagesstaetten.de/" target="blank"><img className="grid-item" src={process.env.PUBLIC_URL + "/images/projects/kenntnisreich-kindertagesstaetten.jpg"} alt="Kenntnisreich Kindertagesstätten"/></a>

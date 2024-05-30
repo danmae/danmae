@@ -1,1 +1,17 @@
 @import-normalize;
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px;
+}
+label {
+  margin-bottom: 10px;
+}
+input, textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}

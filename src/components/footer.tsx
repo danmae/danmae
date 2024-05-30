@@ -6,6 +6,7 @@ class Footer extends React.Component {
     return (
       <div className="impressum">
         <a href="/impressum.html">Impressum</a>
+        <a href="/impressum.html">Datenschutz</a>
       </div>
     );
   }
