@@ -7,7 +7,7 @@ class LandingZone extends React.Component {
       <div>
         <div className="frame">
           <div className="picture">
-            <img src={process.env.PUBLIC_URL + "/images/profile.png"} width="50%" alt="Daniel Maelzer"/>
+            <img className="frame-picture" src={process.env.PUBLIC_URL + "/images/profile.png"} width="50%" alt="Daniel Maelzer"/>
           </div>
           <div className="text">
             <h1>Hi, ich bin Daniel.</h1>
@@ -15,8 +15,8 @@ class LandingZone extends React.Component {
             <h2>Schau dir doch mal meine Arbeiten an.</h2>
           </div>
           <div className="buttons">
-            <a href="/about.html"><button className="about">about</button></a>
-            <a href="/portfolio.html"><button className="portfolio">portfolio</button></a>
+            <a href="/about"><button className="about">about</button></a>
+            <a href="/portfolio"><button className="portfolio">portfolio</button></a>
           </div>
         </div>
 

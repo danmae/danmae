@@ -64,7 +64,7 @@ button{
 .links {
   text-align: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .App{
     width: 100% !important;
   }
@@ -75,7 +75,7 @@ button{
   .text {
     height: initial;
     text-align: center;
-    margin-top:30%;
+    margin-top:10px;
   }
   .frame {
     width: 100%;
@@ -102,10 +102,7 @@ button{
   body {
     height: 100vh;
   }
-  .picture{
-    height: 28%;
-  }
-  img{
+  .frame-picture{
     width: 60%;
   }
 }

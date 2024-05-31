@@ -19,8 +19,14 @@ class About extends React.Component {
             <h1>Hi, ich bin Daniel!</h1>
             <p>Ich bin Informatiker/Webentwickler aus Berlin.
                 Ich entwickle Webseiten und helfe Ihnen digitale Lösungen für Ihr Unternehmen zu gestalten.</p>             
-            <a href="/uploads/cv-ger.pdf" target="_blank"><button><img src="images/icons/download.png" width="12%"/>Lebenslauf</button></a>
-            <a href="https://www.linkedin.com/in/daniel-maelzer-3934541a7/details/certifications/" target="_blank"><button><img src="images/icons/download.png" width="12%"/>Zertifikate</button></a>
+            <div className="download-buttons">
+              <div className="download-button-1">
+                <a href="/uploads/cv-ger.pdf"><button className="about"><img src="images/icons/download.png" className="download-image" width="12%"/>Lebenslauf</button></a>
+              </div>
+              <div className="download-button-2">
+                <a href="https://www.linkedin.com/in/daniel-maelzer-3934541a7/details/certifications/"><button className="portfolio"><img src="images/icons/download.png" className="download-image" width="12%"/>Zertifikate</button></a>
+              </div>
+            </div>
           </div>
         </div>
 

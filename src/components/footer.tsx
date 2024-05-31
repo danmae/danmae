@@ -5,8 +5,8 @@ class Footer extends React.Component {
   render() {
     return (
       <div className="impressum">
-        <a href="/impressum.html">Impressum</a>
-        <a href="/impressum.html">Datenschutz</a>
+        <a href="/impressum">Impressum</a>
+        <a href="/impressum">Datenschutz</a>
       </div>
     );
   }

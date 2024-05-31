@@ -7,3 +7,41 @@
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+.intro-image{
+    float: right;
+    padding: 20px 20px 20px 0px;
+}
+.intro-text{
+    padding: 20px 0px 20px 20px;
+}
+.download-buttons{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+.download-image{
+    float:left;
+}
+@media (max-width: 600px) {
+    .services-section{
+        grid-template-columns: 1fr;
+    }
+    .about-intro{
+        grid-template-columns: 1fr;
+        width:80%;
+        margin: 0 auto;
+    }
+    .intro-picture{
+        float:none;
+        text-align:center;
+        padding:initial;
+    }
+    .intro-image{
+        margin-top: 20px;
+        float:none;
+        padding:initial;
+    }
+    .intro-text{
+        padding:initial;
+        text-align: center;
+    }
+}
