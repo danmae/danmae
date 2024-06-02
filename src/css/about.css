@@ -3,6 +3,35 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
 }
+.introHeading{
+    font-size:40px;
+    font-family:"Work Sans Regular" !important;
+}
+.serviceHeading{
+    font-size:40px;
+    text-align: center;
+    font-family:"Work Sans Regular";
+}
+.serviceSubHeading{
+    text-align: center;
+    font-size:30px;
+    font-family: "Work Sans Regular";
+}
+.seo{
+    text-align: center;
+}
+.wordpress{
+    text-align: center;
+}
+.hosting{
+    text-align: center;
+}
+.maintenance{
+    text-align: center;
+}
+.serviceIcon{
+    width:65px;
+}
 .services-section{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -10,9 +39,16 @@
 .intro-image{
     float: right;
     padding: 20px 20px 20px 0px;
+    width: 400px;
 }
 .intro-text{
-    padding: 20px 0px 20px 20px;
+    padding: 50px 0px 20px 20px;
+    font-size:20px;
+    line-height:2rem;
+}
+.serviceText{
+    font-size:20px;
+    line-height:2rem;
 }
 .download-buttons{
     display:grid;
@@ -21,7 +57,32 @@
 .download-image{
     float:left;
 }
+@media (max-width: 1200px) {
+    .portfolio{
+        padding: 5px 10px 5px 10px;
+        margin: 0px 0px 0px 0px;
+    }
+}
+@media (max-width: 1000px) {
+    .about-intro{
+        grid-template-columns: 1fr;
+    }
+    .intro-image{
+        float:none;
+    }
+    .download-buttons{
+        grid-template-columns: 1fr;
+    }
+    .portfolio{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+}
 @media (max-width: 600px) {
+    .intro-image{
+        width: 300px;
+    }
     .services-section{
         grid-template-columns: 1fr;
     }
