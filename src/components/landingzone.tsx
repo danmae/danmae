@@ -7,7 +7,7 @@ class LandingZone extends React.Component {
       <div>
         <div className="frame">
           <div className="picture">
-            <img className="frame-picture" src={process.env.PUBLIC_URL + "/images/profile.png"} width="50%" alt="Daniel Maelzer"/>
+            <img className="frame-picture" src={process.env.PUBLIC_URL + "/images/profile.png"} width="225px" alt="Daniel Maelzer"/>
           </div>
           <div className="text">
             <h1>Hi, ich bin Daniel.</h1>
