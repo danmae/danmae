@@ -1,16 +1,29 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import "../css/contact.css";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [name, setName] = useState('');
-  const [phone, setPhone] = useState('');
-  const [mail, setMail] = useState('');
-  const [firma, setFirma] = useState('');
-  const [anfrage, setAnfrage] = useState('');
-
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    console.log(`Name: ${name}, Phone: ${phone}, Mail: ${mail}, Firma: ${firma}, Problem: ${anfrage}`);
+  const form = useRef<HTMLFormElement>(null);
+  const [buttonmsg, setButtonmsg] = useState("Senden");
+  const [schriftfarbe, setSchriftfarbe] = useState('rgb(255, 127, 29)');
+  const [border, setBorder] = useState('1px solid lightgray');
+  // Function called on submit that uses emailjs to send email of valid contact form
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    setButtonmsg("Nachricht wird gesendet...");
+    e.preventDefault();
+    emailjs
+      .sendForm('service_hm798e3', 'template_etvwrb5', form.current!, '0gxTA7VVH76n-cfJ7')
+      .then(
+        () => {
+          setButtonmsg("Nachricht wurde Gesendet");
+          setSchriftfarbe('green');
+          setBorder('1px solid green');
+          form.current!.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
   };
 
   return (
@@ -20,14 +33,13 @@ const Contact = () => {
         <a className="mobiletext" href="/about">about</a>
       </nav>
       <h1 className='contact-heading'>Du hast eine Frage?</h1>
-      <form onSubmit={handleSubmit}>
+      <form ref={form} onSubmit={sendEmail}>
         <div className='contact'>
-          <input className='' type="text" id="name" name="name" value={name} onChange={e => setName(e.target.value)} placeholder='Name*' required/>
-          <input className='' type="text" id="phone" name="phone" value={phone} onChange={e => setPhone(e.target.value)} placeholder='Telefonnummer'/>
-          <input className='' type="text" id="firma" name="firma" value={firma} onChange={e => setFirma(e.target.value)} placeholder='Firma'/>
-          <input className='' type="text" id="mail" name="mail" value={mail} onChange={e => setMail(e.target.value)} placeholder='E-Mail Adresse*' required/>
-          <textarea className='' id="anfrage" name="anfrage" value={anfrage} onChange={e => setAnfrage(e.target.value)} placeholder='Dein Anliegen*' required/>
-          <input className='' type="submit" value="Absenden"/>
+        <input type="text" name="name" placeholder='Name'/>
+        <input type="text" name="phone" placeholder='Telefonnummer'/>
+        <input type="email" name="mail" placeholder='E-Mail'/>
+        <textarea name="anfrage" placeholder='Deine Nachricht'/>
+        <input type="submit" value={buttonmsg} style={{color: schriftfarbe, border: border}}/>
         </div>
       </form>
     </div>
