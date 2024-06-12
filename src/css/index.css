@@ -39,3 +39,16 @@ a:visited{
   text-decoration:none;
   color:#3e3947
 }
+.cookielink{
+  color:#ffffff6c !important;
+}
+@media (max-width: 800px) {
+  #rcc-decline-button{
+    width:150px;
+    margin:0 auto;
+  }
+  #rcc-confirm-button{
+    width:150px;
+    margin:0 auto;
+  }
+}

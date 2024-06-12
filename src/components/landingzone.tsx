@@ -21,7 +21,7 @@ class LandingZone extends React.Component {
         </div>
 
         <div className="links">
-          <a target="_blank" href="mailto:daniel@lostingravity.de">
+          <a href="/contact">
             <img
               className="icon"
               src={process.env.PUBLIC_URL + "/images/icons/mail.png"}

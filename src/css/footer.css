@@ -11,3 +11,38 @@
   text-align: center;
   padding-bottom: 25px;
 }
+.justified{
+  text-align: justify;
+}
+.mobileNav{
+  width:100%;
+  margin:20px auto;
+  text-align:center;
+  margin-bottom:0px;
+  transition-duration: 0.4s;
+}
+.mobiletext{
+  padding-left:20px;
+  padding-right:20px;
+  font-size:25;
+  transition-duration: 0.4s;
+  width:30%;
+}
+.mobiletext:hover {
+  transform: scale(1.5); 
+}
+.centered{
+  text-align: center;
+}
+@media (min-width: 800px) {
+  .mobileNav {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  body{
+    padding-left:10px;
+    padding-right:10px;
+    text-align: center;
+  }
+}

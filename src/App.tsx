@@ -2,13 +2,14 @@ import React from "react";
 import Header from "./components/header";
 import LandingZone from "./components/landingzone";
 import Footer from "./components/footer";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import Portfolio from "./components/portfolio";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Impressum from "./components/impressum";
 import Datenschutz from "./components/datenschutz";
 import CookieConsent from "react-cookie-consent";
+import "./css/index.css";
 
 function App() {
   return (
@@ -24,16 +25,17 @@ function App() {
       </Routes>
       <CookieConsent
         enableDeclineButton
+        declineButtonText="Ablehnen"
         onDecline={() => {
-          alert("nay!");
+          window.location.href = "https://www.google.de/search?q=how+to+create+a+website+myself";
         }}
         location="bottom"
-        buttonText="Sure man!!"
-        cookieName="myAwesomeCookieName2"
-        style={{ background: "#ff4093",opacity: "0.5", color: "#fff" }}
-        buttonStyle={{ background: "#ff7f1d", color:"white"}}
+        buttonText="Akzeptieren"
+        cookieName="omnomnom"
+        style={{ background: "#3CA4DC",opacity: ".6", color: "#fff" }}
+        buttonStyle={{ background: "#ffffff", color:"#000000"}}
         expires={30}>
-        This website uses cookies to enhance the user experience.{" "}
+        Diese Webseite nutzt Cookies zur Verbesserung der User-Experience. <Link className="cookielink" to="/datenschutz">Mehr Infos</Link>{" "}
       </CookieConsent>
       <Footer />
     </div>
