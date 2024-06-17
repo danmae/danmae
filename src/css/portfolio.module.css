@@ -16,17 +16,17 @@ button {
   box-shadow: initial;
   color: initial;
 }
-.portfolio-grid {
+.portfolioGrid {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
   margin: 1rem;
 }
-.grid-item {
+.gridItem {
   max-width: 100%;
   border-radius: 20px;
 }
-.portfolio-text {
+.portfolioText {
   text-align: center;
   color: #ff7f1d;
   font-family: "Work Sans xLight";
@@ -55,13 +55,13 @@ img:hover {
   transform: scale(1.5); 
 }
 @media (min-width: 800px) {
-  .portfolio-grid {
+  .portfolioGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     margin: 1rem;
   }
-  .grid-item {
+  .gridItem {
     max-width: 100%;
   }
   .mobileNav {

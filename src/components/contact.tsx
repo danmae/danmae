@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
-import "../css/contact.css";
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from 'react-google-recaptcha';
+import styles from '../css/contact.module.css';
 
 const Contact = () => {
   const [capVal, setCapVal] = useState<any | null>(null);
@@ -31,13 +31,13 @@ const Contact = () => {
 
   return (
     <div>
-      <nav className="mobileNav">
-        <a className="mobiletext" href="/">zurück</a>
-        <a className="mobiletext" href="/about">about</a>
+      <nav className={`${styles.mobileNav}`}>
+        <a className={`${styles.mobiletext}`} href="/">zurück</a>
+        <a className={`${styles.mobiletext}`} href="/about">about</a>
       </nav>
-      <h1 className='contact-heading'>Du hast eine Frage?</h1>
+      <h1 className={`${styles.contactHeading}`}>Du hast eine Frage?</h1>
       <form ref={form} onSubmit={sendEmail}>
-        <div className='contact'>
+        <div className={`${styles.contact}`}>
         <input type="text" name="name" placeholder='Name'required/>
         <input type="text" name="phone" placeholder='Telefonnummer'required/>
         <input type="email" name="mail" placeholder='E-Mail'required/>

@@ -9,11 +9,11 @@ import Contact from "./components/contact";
 import Impressum from "./components/impressum";
 import Datenschutz from "./components/datenschutz";
 import CookieConsent from "react-cookie-consent";
-import "./css/index.css";
+import styles from "./css/index.module.css";
 
 function App() {
   return (
-    <div className="App">
+    <div className={`${styles.App}`}>
       <Header />
       <Routes>
         <Route path="/" element={<LandingZone />} />
@@ -35,7 +35,7 @@ function App() {
         style={{ background: "#3CA4DC",opacity: ".6", color: "#fff" }}
         buttonStyle={{ background: "#ffffff", color:"#000000"}}
         expires={30}>
-        Diese Webseite nutzt Cookies zur Verbesserung der User-Experience. <Link className="cookielink" to="/datenschutz">Mehr Infos</Link>{" "}
+        Diese Webseite nutzt Cookies zur Verbesserung der User-Experience. <Link className={`${styles.cookielink}`} to="/datenschutz">Mehr Infos</Link>{" "}
       </CookieConsent>
       <Footer />
     </div>

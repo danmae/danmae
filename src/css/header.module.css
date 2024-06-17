@@ -1,7 +1,7 @@
 ul {
   display: none;
 }
-.menu-logo {
+.menuLogo {
   float: left;
   font-family: "Work Sans Regular";
 }
@@ -27,19 +27,19 @@ ul {
   li:hover{
     transform: scale(1.1) translate(3.5%);
   }
-  .menu-logo:hover{
+  .menuLogo:hover{
     color:#ff7f1d;
   }
-  .item-1:hover{
+  .item1:hover{
     color: #ff7f1d;
   }
-  .item-2:hover{
+  .item2:hover{
     color: #ff4093;
   }
-  .item-3:hover{
+  .item3:hover{
     color: #ff7f1d;
   }
-  .item-4:hover{
+  .item4:hover{
     color: #ff4093;
   }
 }
