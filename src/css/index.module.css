@@ -42,6 +42,11 @@ a:visited{
 .cookielink{
   color:#ffffff6c !important;
 }
+@media (max-width: 1100px) {
+  .App{
+    width:95%;
+  }
+}
 @media (max-width: 800px) {
   #rcc-decline-button{
     width:150px;

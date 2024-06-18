@@ -14,6 +14,9 @@
 .justified{
   text-align: justify;
 }
+.leftFloated{
+  text-align: start;
+}
 .mobileNav{
   width:100%;
   margin:20px auto;

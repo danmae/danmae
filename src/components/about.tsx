@@ -9,7 +9,6 @@ class About extends React.Component {
           <a className={`${styles.mobiletext}`} href="/">zurück</a>
           <a className={`${styles.mobiletext}`} href="/portfolio">portfolio</a>
         </nav>
-
         <div className={`${styles.aboutIntro}`}>
           <div className={`${styles.introPicture}`}>
             <img src={process.env.PUBLIC_URL + "/images/aboutme.jpg"} className={`${styles.introImage}`} width="50%"/>
