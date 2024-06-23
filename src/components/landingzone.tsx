@@ -1,11 +1,27 @@
 import React from "react";
 import styles from "../css/landingzone.module.css";
+import { motion } from "framer-motion";  
+
+const fadeInAnimationVariant = {
+  initial: {
+    opacity: 0,
+    y: 100
+  },
+  animate: { 
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: 0.01
+    }
+  }
+}
 
 class LandingZone extends React.Component {
   render() {
     return (
       <div>
-        <div className={`${styles.frame}`}>
+        <motion.div variants={fadeInAnimationVariant} initial="initial" whileInView="animate" viewport={{once:true}} className={`${styles.frame}`}>
           <div className={`${styles.picture}`}>
             <img src={process.env.PUBLIC_URL + "/images/profile.png"} width="225px" alt="Daniel Maelzer"/>
           </div>
@@ -18,9 +34,9 @@ class LandingZone extends React.Component {
             <a href="/about"><button className={`${styles.about}`}>about</button></a>
             <a href="/portfolio"><button className={`${styles.portfolio}`}>portfolio</button></a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className={`${styles.links}`}>
+        <motion.div variants={fadeInAnimationVariant} initial="initial" whileInView="animate" viewport={{once:true}} className={`${styles.links}`}>
           <a href="/contact">
             <img
               className={`${styles.icon}`}
@@ -45,7 +61,7 @@ class LandingZone extends React.Component {
               alt="Xing Icon"
             />
           </a>
-        </div>
+        </motion.div>
       </div>
     );
   }
