@@ -66,7 +66,7 @@ class Datenschutz extends React.Component {
     <h2>5. Rechte der betroffenen Person</h2>
     <p className={`${styles.justified}`}>Sie haben das Recht:</p>
 
-    <p className={`${styles.justified, styles.leftFloated}`}>- gemäß Art. 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen,<br></br>
+    <p className={`${styles.justified},${styles.leftFloated}`}>- gemäß Art. 15 DSGVO Auskunft über Ihre von uns verarbeiteten personenbezogenen Daten zu verlangen,<br></br>
     - gemäß Art. 16 DSGVO unverzüglich die Berichtigung unrichtiger oder Vervollständigung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen,<br></br>
     - gemäß Art. 17 DSGVO die Löschung Ihrer bei uns gespeicherten personenbezogenen Daten zu verlangen,<br></br>
     - gemäß Art. 18 DSGVO die Einschränkung der Verarbeitung Ihrer personenbezogenen Daten zu verlangen,<br></br>

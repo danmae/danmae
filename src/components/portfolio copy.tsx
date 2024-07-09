@@ -1,27 +1,10 @@
 import React from "react";
 import styles from "../css/portfolio.module.css";
-import {Row, Col, Container} from 'react-bootstrap';
 
 class Portfolio extends React.Component {
   render() {
     return (
       <div>
-        <Container>
-          <Row>
-            <Col>1 of 2</Col>
-            <Col>2 of 2</Col>
-          </Row>
-          <Row>
-            <Col>1 of 3</Col>
-            <Col>2 of 3</Col>
-            <Col>3 of 3</Col>
-          </Row>
-        </Container>
-
-
-
-
-
         <h1 className={`${styles.portfolioText}`}>Portfolio</h1>
         <nav className={`${styles.mobileNav}`}>
           <a className={`${styles.mobiletext}`} href="/">zurück</a>

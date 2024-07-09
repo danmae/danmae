@@ -1,27 +1,13 @@
 import React from "react";
 import styles from "../css/landingzone.module.css";
 import { motion } from "framer-motion";  
-
-const fadeInAnimationVariant = {
-  initial: {
-    opacity: 0,
-    y: 100
-  },
-  animate: { 
-    opacity: 1,
-    y: 0,
-    transition: {
-      duration: 0.5,
-      delay: 0.01
-    }
-  }
-}
+import * as animations from "../js/animations.js";
 
 class LandingZone extends React.Component {
   render() {
     return (
       <div>
-        <motion.div variants={fadeInAnimationVariant} initial="initial" whileInView="animate" viewport={{once:true}} className={`${styles.frame}`}>
+        <motion.div variants={animations.fadeInAnimationVariant1} initial="initial" whileInView="animate" viewport={{once:true}} className={`${styles.frame}`}>
           <div className={`${styles.picture}`}>
             <img src={process.env.PUBLIC_URL + "/images/profile.png"} width="225px" alt="Daniel Maelzer"/>
           </div>
@@ -36,7 +22,8 @@ class LandingZone extends React.Component {
           </div>
         </motion.div>
 
-        <motion.div variants={fadeInAnimationVariant} initial="initial" whileInView="animate" viewport={{once:true}} className={`${styles.links}`}>
+        <div className={`${styles.links}`}>
+          <motion.div variants={animations.fadeInAnimationVariant1} initial="initial" whileInView="animate" viewport={{once:true}}>
           <a href="/contact">
             <img
               className={`${styles.icon}`}
@@ -44,8 +31,10 @@ class LandingZone extends React.Component {
               alt="Mail Icon"
             />
           </a>
+          </motion.div>
+          <motion.div variants={animations.fadeInAnimationVariant2} initial="initial" whileInView="animate" viewport={{once:true}}>
           <a
-            target="_blank"
+            target="_blank" rel="noreferrer"
             href="https://de.linkedin.com/in/daniel-maelzer-3934541a7"
           >
             <img
@@ -54,14 +43,17 @@ class LandingZone extends React.Component {
               alt="LinkedIn Icon"
             />
           </a>
-          <a target="_blank" href="https://www.xing.com/profile/Daniel_Maelzer">
+          </motion.div>
+          <motion.div variants={animations.fadeInAnimationVariant3} initial="initial" whileInView="animate" viewport={{once:true}}>
+          <a target="_blank" rel="noreferrer" href="https://www.xing.com/profile/Daniel_Maelzer">
             <img
               className={`${styles.icon}`}
               src={process.env.PUBLIC_URL + "/images/icons/xing.png"}
               alt="Xing Icon"
             />
           </a>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     );
   }

@@ -4,6 +4,7 @@
   height: 550px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 50px auto;
+  background-color: var(--color-bg-lighter);
 }
 .picture {
   height: 40%;
@@ -35,11 +36,11 @@ button{
   padding: 5px 25px 5px 25px;
   margin: 0px 25px 0px 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: #707070;
+  color: var(--color-a);
 }
 .about:hover {
   transform: scale(1.2);
-  color: #ff7f1d;
+  color: var(--color-a);
 }
 .portfolio {
   transition-duration: 0.4s;
@@ -47,11 +48,11 @@ button{
   padding: 5px 25px 5px 25px;
   margin: 0px 25px 0px 25px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  color: #707070;
+  color: var(--color-a);
 }
 .portfolio:hover {
   transform: scale(1.2);
-  color: #ff4093;
+  color: var(--color-a);
 }
 .icon {
   transition: transform 0.2s;
@@ -64,6 +65,10 @@ button{
 }
 .links {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width:300px;
+  margin:0 auto;
 }
 @media (max-width: 600px) {
   .App{

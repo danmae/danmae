@@ -12,6 +12,13 @@
   font-family: "Work Sans Regular";
   src: url("/src/fonts/WorkSans-Regular.ttf");
 }
+:root{
+  --color-h1: white;
+  --color-h2: white;
+  --color-a: white;
+  --color-bg-standard: #1f2127;
+  --color-bg-lighter:#252735;
+}
 .App{
   width:75%;
   margin: 0 auto;
@@ -21,23 +28,24 @@ body {
   font-size: 100%;
   font-family: 'Work Sans Light', sans-serif;
   color: #3e3947;
-  background-color: white;
+  background-color: var(--color-bg-standard);
 }
 h1{
   font-size:30px;
-  color:#707070;
+  color:var(--color-h1);
 }
 h2{
   font-size:20px;
   font-weight: 200px;
+  color:var(--color-h2)
 }
 a:link{
   text-decoration:none;
-  color:#3e3947;
+  color:var(--color-a);
 }
 a:visited{
   text-decoration:none;
-  color:#3e3947
+  color:var(--color-a);
 }
 .cookielink{
   color:#ffffff6c !important;
